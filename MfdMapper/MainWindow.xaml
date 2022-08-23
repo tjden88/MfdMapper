@@ -25,34 +25,36 @@
 
         <Canvas>
 
-            <Button Canvas.Left="9" Canvas.Top="110" HorizontalAlignment="Left" VerticalAlignment="Center" />
-            <Button Canvas.Left="9" Canvas.Top="159" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <Button Canvas.Left="9" Canvas.Top="110" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click_2" />
+            <Button Canvas.Left="9" Canvas.Top="159" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click_3" />
             <Button Canvas.Left="8" Canvas.Top="210" HorizontalAlignment="Left" VerticalAlignment="Center" />
             <Button Canvas.Left="8" Canvas.Top="259" HorizontalAlignment="Left" VerticalAlignment="Center" />
             <Button Canvas.Left="8" Canvas.Top="309" HorizontalAlignment="Left" VerticalAlignment="Center" />
             <Button Canvas.Left="100" Canvas.Top="411" HorizontalAlignment="Center" VerticalAlignment="Top" />
-            <Button Canvas.Left="154" Canvas.Top="411" HorizontalAlignment="Left" VerticalAlignment="Center" />
-            <Button Canvas.Left="211" Canvas.Top="411" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button Canvas.Left="154" Canvas.Top="411" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click" />
+            <Button Canvas.Left="211" Canvas.Top="411" HorizontalAlignment="Left" VerticalAlignment="Center" Click="Button_Click_1" />
             <Button Canvas.Left="265" Canvas.Top="411" HorizontalAlignment="Left" VerticalAlignment="Center" />
             <Button Canvas.Left="318" Canvas.Top="412" HorizontalAlignment="Left" VerticalAlignment="Center" />
 
-            <TextBlock Canvas.Left="60" TextWrapping="Wrap" Text="Действие 1" Canvas.Top="115" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <TextBlock Canvas.Left="60" TextWrapping="Wrap" Text="Действие 3" Canvas.Top="164" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBlock Canvas.Left="60" TextWrapping="Wrap" Text="Действие 4" Canvas.Top="210" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <TextBlock Canvas.Left="318" TextWrapping="Wrap" Text="Действие 2" Canvas.Top="115" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Name="t1" Canvas.Left="60" TextWrapping="Wrap" Text="Действие 1" Canvas.Top="115" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBlock Name="t3" Canvas.Left="60" TextWrapping="Wrap" Text="Действие 3" Canvas.Top="164" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Name="t4"  Visibility="Hidden" Canvas.Left="60" TextWrapping="Wrap" Text="Действие 4" Canvas.Top="210" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <TextBlock Name="t2" Visibility="Hidden" Canvas.Left="318" TextWrapping="Wrap" Text="Действие 2" Canvas.Top="115" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBlock Name="t5" Visibility="Hidden" Canvas.Left="318" TextWrapping="Wrap" Text="Действие 5" Canvas.Top="164" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+
             <TextBlock Canvas.Left="87" TextWrapping="Wrap" Text="Меню1" Canvas.Top="375" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Canvas.Left="147" TextWrapping="Wrap" Text="Меню2" Canvas.Top="375" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Canvas.Left="204" TextWrapping="Wrap" Text="Меню3" Canvas.Top="375" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Canvas.Left="258" TextWrapping="Wrap" Text="Меню4" Canvas.Top="375" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             <TextBlock Canvas.Left="318" TextWrapping="Wrap" Text="Меню5" Canvas.Top="375" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <TextBlock Canvas.Left="318" TextWrapping="Wrap" Text="Действие 5" Canvas.Top="164" HorizontalAlignment="Left" VerticalAlignment="Top"/>
 
 
 
         </Canvas>
 
         <Border HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FF2F2F2F" Width="120" CornerRadius="10" Height="120">
-            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Name="TextAction" FontSize="16" TextWrapping="Wrap" TextAlignment="Center" Foreground="Red"></TextBlock>
         </Border>
 
 

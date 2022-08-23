@@ -24,5 +24,44 @@ namespace MfdMapper
         {
             InitializeComponent();
         }
+
+        private void HideText()
+        {
+            t1.Visibility = Visibility.Hidden;
+            t2.Visibility = Visibility.Hidden;
+            t3.Visibility = Visibility.Hidden;
+            t4.Visibility = Visibility.Hidden;
+            t5.Visibility = Visibility.Hidden;
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            HideText();
+            t2.Visibility = Visibility.Visible;
+            t4.Visibility = Visibility.Visible;
+            TextAction.Text = "Выбрано меню 2";
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            HideText();
+            t1.Visibility = Visibility.Visible;
+            t3.Visibility = Visibility.Visible;
+            t5.Visibility = Visibility.Visible;
+            TextAction.Text = "Выбрано меню 3";
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            TextAction.Text = "Действие 1 выполнено";
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            TextAction.Text = "Действие 3 выполнено";
+
+        }
     }
 }
