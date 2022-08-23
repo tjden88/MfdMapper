@@ -5,9 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MfdMapper"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="435">
-    <Grid>
-<Image Source="mfd.jpg"/>
-<Border Background="#FF151515" Margin="48" CornerRadius="30"></Border>
+        SizeToContent="WidthAndHeight"
+        Title="MainWindow">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="Transparent"></Setter>
+            <Setter Property="Width" Value="28"></Setter>
+            <Setter Property="Height" Value="28"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Width="450" Height="450">
+        <Image Source="/mfd.jpg" Stretch="Fill" Width="450" Height="450"/>
+        <Border Background="#FF151515" Margin="48" CornerRadius="30"/>
+
+        <Canvas>
+
+            <Button Canvas.Left="9" Canvas.Top="110" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button Canvas.Left="9" Canvas.Top="159" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <Button Canvas.Left="8" Canvas.Top="210" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button Canvas.Left="8" Canvas.Top="259" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button Canvas.Left="8" Canvas.Top="309" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button Canvas.Left="100" Canvas.Top="411" HorizontalAlignment="Center" VerticalAlignment="Top" />
+            <Button Canvas.Left="154" Canvas.Top="411" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button Canvas.Left="211" Canvas.Top="411" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button Canvas.Left="265" Canvas.Top="411" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            <Button Canvas.Left="318" Canvas.Top="412" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        </Canvas>
+
+
+
+
     </Grid>
 </Window>
